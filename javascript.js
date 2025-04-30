@@ -20,18 +20,11 @@ hover.forEach((box) => {
   box.addEventListener("mouseenter", (e) => {
     highlightBox(e);
   });
-
-  box.addEventListener("mouseleave", (e) => {
-    removeHighlight(e);
-  });
 });
 }
 
 function highlightBox(e){
 e.target.style.backgroundColor = "lightcoral";
-}
-function removeHighlight(e){
-  e.target.style.backgroundColor = "white";
 }
 
 createGrid();
