@@ -4,7 +4,7 @@
   aspect-ratio: 1/1;
   min-width: 0;
 }
-body{
+body {
   display: flex;
   flex-direction: column;
 }
@@ -14,24 +14,24 @@ body{
   width: 85vw;
   height: 85vh;
 }
-.gridArea{
+.gridArea {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header{
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px 0px;
   gap: 10px;
 }
-.title{
+.title {
   display: flex;
   justify-content: center;
   background-color: lightblue;
   margin-bottom: 0;
 }
-.amount{
+.amount {
   width: 4em;
 }

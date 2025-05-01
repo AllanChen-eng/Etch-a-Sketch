@@ -34,7 +34,9 @@ function getInputNumber() {
   const number = document.querySelector(".amount");
   let value = number.value;
   if (value == null || isNaN(value) || value < 1 || value >= 100) {
-    setDisplay(`Invalid input! Please enter a number between 1-100! Refreshing grid to last acceptable grid: ${prevGrid} x ${prevGrid} `);
+    setDisplay(
+      `Invalid input! Please enter a number between 1-100! Refreshing grid to last acceptable grid: ${prevGrid} x ${prevGrid} `
+    );
     return prevGrid; //remakes the last acceptable grid dimensions
   } else {
     setDisplay(`Successfully created grid of ${value} x ${value}`);
