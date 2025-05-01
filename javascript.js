@@ -1,11 +1,12 @@
-const gridSize = 16;
 
-function createGrid() {
+function createGrid(gridSize = 16) {
   const container = document.querySelector(".container");
   for (let x = 0; x < gridSize; x++) {
     for (let n = 0; n < gridSize; n++) {
       const newDiv = document.createElement("div");
       newDiv.setAttribute("class", "gridBox");
+      let flexBasis = 100/gridSize;
+      newDiv.style.flexBasis = `${flexBasis}%`;
       container.appendChild(newDiv);
     }
   }

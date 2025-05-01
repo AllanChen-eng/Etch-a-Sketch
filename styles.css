@@ -1,13 +1,33 @@
 .gridBox {
   padding: 10px;
-  flex: 0 0 6.25%;
   box-sizing: border-box;
+  outline: 1px solid black;
+}
+body{
+  display: flex;
+  flex-direction: column;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 85vw;
+  height: 85vh;
 }
-div{
-    border-style: solid;
-    border-width: thin;
+.gridArea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+  gap: 10px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+  margin-bottom: 0;
 }
