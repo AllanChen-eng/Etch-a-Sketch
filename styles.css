@@ -1,7 +1,8 @@
 .gridBox {
-  padding: 10px;
   box-sizing: border-box;
   outline: 1px solid black;
+  aspect-ratio: 1/1;
+  min-width: 0;
 }
 body{
   display: flex;
@@ -30,4 +31,7 @@ body{
   justify-content: center;
   background-color: lightblue;
   margin-bottom: 0;
+}
+.amount{
+  width: 4em;
 }
