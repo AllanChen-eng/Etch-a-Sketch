@@ -1,6 +1,6 @@
 let prevGrid = 16;
 function createGrid(gridSize = 16) {
-  const container = document.querySelector(".container");
+  const container = document.querySelector(".gridContainer");
   for (let x = 0; x < gridSize; x++) {
     for (let n = 0; n < gridSize; n++) {
       const newDiv = document.createElement("div");
@@ -52,7 +52,7 @@ function clearDisplay() {
   display.innerHTML = "";
 }
 function clearGrid() {
-  const container = document.querySelector(".container");
+  const container = document.querySelector(".gridContainer");
   container.replaceChildren();
 }
 function setDisplay(text) {
